@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe UI' sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,#da0793,#d3e90a);
+    padding: 20px 50px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(248, 2, 2, 0.3);
+}
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.navigation-menu {
+    color: rgb(13, 226, 120);
+    text-decoration: #ee05c7;
+    margin: 0 15px;
+    font-size: 1.1em;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.navigation-menu a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.navigation-menu a:hover {
+     color: #ffd700;
+}
+.navigation-menu a:hover::after {
+    width: 100%;
+}
+.login-button button {
+     padding: 8px 20px;
+     background-color: #ffd700;
+     border: none;
+     border-radius: 20px;
+     font-size: 1em;
+     cursor: pointer;
+     transition: background-color 0.3s ease,transform 0.3s ease;
+}
+.login-button button::hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+.assignment-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+    background: #08e63f;
+}
+.assignment-text {
+    font-size: 1.5em;
+    background: rgb(240, 9, 201);
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.assignment-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    background: #fff9e6;
+}
